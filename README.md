@@ -27,11 +27,11 @@ Ahora realizaremos una configuracion basica local del usuario para todos los res
 
 **Establece el nombre que estará asociado a tus commits**
 
-`$ git config --global user.name "[nombre]"`
+**`$ git config --global user.name "[nombre]"`**
 
 **Establece el e-mail que estará asociado a tus commits**
 
-`$ git config --global user.email "[email]"`
+**`$ git config --global user.email "[email]"`**
 
 
 # 📁 Crear un repositorio
@@ -40,11 +40,11 @@ Crearemos una carpeta en la ubicacion de nuestra preferencia (Para el ejemplo se
 
 ![](./Media/changedirectory.png)
 
-Aqui utilizaremos el comando  `$ git init` el cual creara una area conocida **staging** (donde se gurdan temportalmente nuestros archivos) y un **repositorio local** (historial del proyecto)
+Aqui utilizaremos el comando  **`$ git init`** el cual creara una area conocida **staging** (donde se gurdan temportalmente nuestros archivos) y un **repositorio local** (historial del proyecto)
 
-Podremos agregar nuevos archivos a esa carpeta desde la consola con el comando `$ touch "[nombre]"` o utilizar el comando `code .`  con el que se nos abrira Visual Studio Code directamente.
+Podremos agregar nuevos archivos a esa carpeta desde la consola con el comando **`$ touch "[nombre]"`** o utilizar el comando **`code .`**  con el que se nos abrira Visual Studio Code directamente.
 
-Cuando trabajamos con git, estos archivos pasan por diferentes **estados**. Podemos verificar en que estado se encuentran nuestros archivos con el comando `$ git status`.
+Cuando trabajamos con git, estos archivos pasan por diferentes **estados**. Podemos verificar en que estado se encuentran nuestros archivos con el comando **`$ git status`**.
 
 <br>
 
@@ -63,21 +63,21 @@ Crear una **rama** consiste en copiar un **commit** de una rama determinada y co
 
 <br>
 
-Con `$ git status` podemos ver en que rama estamos, en que version del commit y si hay cambios por enviar.  
+Con **`$ git status`** podemos ver en que rama estamos, en que version del commit y si hay cambios por enviar.  
 
-Para poder crear una rama utilizaremos el comando `$ git branch "[nombre]"` el cual creara una copia del ultimo commit de la rama en la que estemos y con esto tendremos nuestra rama hecha.  
+Para poder crear una rama utilizaremos el comando **`$ git branch "[nombre]"`** el cual creara una copia del ultimo commit de la rama en la que estemos y con esto tendremos nuestra rama hecha.  
 
-Podemos mostrar todas las ramas que tengamos en el repositorio actual con el comando `$ git branch`  
+Podemos mostrar todas las ramas que tengamos en el repositorio actual con el comando **`$ git branch`**  
 
-Por ultimo, podemos cambiar de una rama a otra usando `$ git switch "[nombre]"` 
+Por ultimo, podemos cambiar de una rama a otra usando **`$ git switch "[nombre]"`** 
 
 ⚠️ No olvides hacer **commit** antes de irte a otra rama para no perder los cambios realizados.  
 
 La **fusion de ramas o Merge** ocurre cuando los cambios de una rama los queremos pasar a otra.
 
 **Por ejemplo:** Queremos agregar a la rama main unos cambios que se realizaron en una rama secundaria, los pasos a seguir serian:
-1. Ubicarnos en la rama a donde nos queremos traer los cambios, podemos usar `$ git checkout main` o `$ git switch main`
-2. Utilizar el comando `$ git merge "[nombre de la rama]"`, se abrira un entorno para escribir un mensaje
+1. Ubicarnos en la rama a donde nos queremos traer los cambios, podemos usar **`$ git checkout main`** o **`$ git switch main`**
+2. Utilizar el comando **`$ git merge "[nombre de la rama]"`**, se abrira un entorno para escribir un mensaje
 3. Listo! Nos traeremos codigo de una rama a otra, en esta parte puede haber errores en caso de inconsistencias con el codigo asi que si llega a aparecer un mensaje, habra que revisar antes  
 
 <br>
