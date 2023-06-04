@@ -1,12 +1,11 @@
 # 💻 Git & Github
 
-# 📝 Guia, descripciones y comandos de Git y Github para el dia a a dia vaya y en español
+# 📝 Guia, descripciones y comandos de Git y Github para el dia a a dia vaya (y en español)
 
 ![](./Media/gitgithub.jpeg)
 
 ### Archivo con imagenes, comandos y descripciones para realizar un repositorio con git y github, una guia basica y sencilla. 
 
-<br>
 
 # 📌 ¿Qué es Git? 
  
@@ -15,7 +14,6 @@ Bueno, este se refiere a un sistema que registra los cambios de un archivo o un 
 
 ![](./Media/git.png)
 
-<br>
 
 # 🔗 Instalacion y configuracion básica de Git
 
@@ -35,7 +33,6 @@ Ahora realizaremos una configuracion basica local del usuario para todos los res
 
 `$ git config --global user.email "[email]"`
 
-<br>
 
 # 📁 Crear un repositorio
 
@@ -52,8 +49,6 @@ Cuando trabajamos con git, estos archivos pasan por diferentes **estados**. Pode
 <br>
 
 ![](./Media/diagram.png)
-
-<br>
 
 # 🌱 Ramas o Branches
 
@@ -89,8 +84,6 @@ La **fusion de ramas o Merge** ocurre cuando los cambios de una rama los queremo
 
 ![](./Media/merge2.png)
 
-<br>
-
 # 🌎 ¿Qué es GitHub?
 
 Bien ! Hasta el momento tenemos implementado un control de versiones para nuestro proyecto pero esto solo lo tenemos de manera **local**, si nuestro equipo de trabajo se llegase a dañar, no podriamos recuperar todos esos respaldos que hemos estado realizando con el tiempo. 
@@ -99,7 +92,7 @@ Aqui es donde entra **GitHub** la cual es una plataforma en donde podemos alojar
 
 Imaginemos que ya tenemos configurado nuestro **repositorio local con git** y ahora queremos subirlo a github. Los pasos a seguir seran los siguientes:  
 
-1. Crear una cuenta en Github, ir a la parte de crear repositorio y crear uno nuevo como se muestra en la imagen  
+**1. Crear una cuenta en Github, ir a la parte de crear repositorio y crear uno nuevo como se muestra en la imagen**  
 
 
 
@@ -111,7 +104,7 @@ La opcion de agregar un archivo README es opcional, este lo podremos agregar des
 
 <br>
 
-2. En GitHub nos aparecera una pagina como la siguiente, vamos a la consola y escribimos  el comando `$ git remote add origin "[link]"` con el que vincularemos el repositorio remoto con el local, seguido de esto usaremos el comando `$ git push -u origin main` el cual sera el responsable de subir todos nuestros archivos al servidor remoto.
+**2. En GitHub nos aparecera una pagina como la siguiente, vamos a la consola y escribimos  el comando `$ git remote add origin "[link]"` con el que vincularemos el repositorio remoto con el local, seguido de esto usaremos el comando `$ git push -u origin main` el cual sera el responsable de subir todos nuestros archivos al servidor remoto.**
 
 <br>
 
@@ -119,22 +112,18 @@ La opcion de agregar un archivo README es opcional, este lo podremos agregar des
 
 <br>
 
-3. Y listo! ya tendremos nuestro repositorio en un servidor remoto, el siguiente diagrama explica de manera clara como funciona el **flujo de trabajo** al utilizar estas dos herramientas que son Git y GitHub.
+**3. Y listo! ya tendremos nuestro repositorio en un servidor remoto, el siguiente diagrama explica de manera clara como funciona el **flujo de trabajo** al utilizar estas dos herramientas que son Git y GitHub.**
 
 <br>
 
 ![](./Media/workflow.jpg)
 
-<br>
 
-
-# Más comandos
+# 📄 Más comandos
 
 Los comandos que vimos aqui no son los únicos que hay, sin embargo en el dia a dia se suelen utilizar los mismos, asi que dejare aqui los que considero mas importantes, en la seccion de referencias habra links donde podras encontrar aun más comandos.  
 
-<br>
-
-## Configuracion de herramientas
+## 🪛 Configuracion de herramientas
 
 **`$ git config --global user.name "[name]`**  
 Establece el nombre que estará asociado a tus commits
@@ -142,9 +131,8 @@ Establece el nombre que estará asociado a tus commits
 **`$ git config --global user.email "[email address]"`**  
 Establece el e-mail que estará asociado a sus commits  
 
-<br>
 
-## Crear repositorios
+## 📂 Crear repositorios
 
 **`$ git init "[nombre]"`**  
 Crea un nuevo repositorio local con el nombre especificado
@@ -152,9 +140,8 @@ Crea un nuevo repositorio local con el nombre especificado
 **`$ git clone "[url]"`**  
 Descarga un proyecto y toda su historial de versiones
 
-<br>
 
-## Manejo de archivos
+## 📑 Manejo de archivos
 
 **`$ git rm [archivo]`**  
 Borra el archivo del directorio activo y lo pone en el área de espera en un estado de eliminación
@@ -172,9 +159,8 @@ Cambia el nombre del archivo y lo prepara para ser guardado
 Crear un archivo que sera ignorado. En ese archivo se agregan los ficheros que queremos ignorar con **/.(nombre archivo)
 Despues se agrega al area de stage con git add .gitigonre
 
-<br>
 
-## Consultar historial
+## 🧾 Consultar historial
 
 **`$ git log`**  
 Enumera el historial de versiones para la rama actual, aqui obtenemos el codigo (hash) de nuestros commits
@@ -200,9 +186,8 @@ Muestra las diferencias del archivo entre el área de espera y la última versi�
 **`$ git log --graph --decorate --all --oneline`** 
 Comando que me gusta acompañar con git alias para postrar de manera mas grafica como han ido avanzando las ramas de nuestro proyecto, esto a traves del comando `git config --global alias.tree`, asi cada que usemos git tree, veremos log de manera distinta
 
-<br>
 
-## Guardar fragmentos 
+## 💾 Guardar fragmentos 
 
 **`$ git stash`**  
 Guarda los archivos temporalmente y de manera local pero sin realizar un commit
@@ -217,9 +202,7 @@ Restaura los archivos guardados más recientemente
 Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente
 
 
-<br>
-
-## Efectuar cambios
+## 📩 Efectuar cambios
 
 **`$ git status`**  
 Ver el estado actual de nuestros archivos 
@@ -236,22 +219,7 @@ Crear un tag para representar una parte importante en ese momento del tiempo
 **`$ git tag`**  
 Ver el listado de tags creados hasta el momento
 
-<br>
-
-## 
-
-**`$ git status`**  
-Ver el estado de nuestros archivos 
-
-**`$ git status`**  
-Ver el estado de nuestros archivos 
-
-**`$ git status`**  
-Ver el estado de nuestros archivos 
-
-<br>
-
-# Deshacer cambios
+## 🚫 Deshacer cambios
 
 **`$ git reset "[commit]"`**  
 Resetea cambios y regresa a un punto en una linea del tiempo
@@ -267,7 +235,7 @@ Para esto primero tenemos que hacer un git checkout "[hash de una version]", est
 
 <br>
 
-## Cambios grupales
+## 👥 Cambios grupales
 
 **`$ git branch`**  
 Lista todas las ramas existentes en el repositorio actual 
@@ -290,10 +258,7 @@ Ver el estado de nuestros archivos
 **`$ git status`**  
 Ver el estado de nuestros archivos 
 
-<br>
-
-
-## Sincronizar cambios
+## 🟢 Sincronizar cambios
 
 **`$ git push`**  
 Una vez verificado con git status que todos nuestros archivos estan en orden usamos ese comando para subir todos los cambios a GitHub  
@@ -313,6 +278,7 @@ Realiza una copia del repositorio de alguien mas PERO en tu cuenta
 **`pull request (pr)`**  
 Una vez hecha una copia de algun repositorio , puedes solicitar un pr para hacer alguna mejora en el codigo original, mis cambios los pasarian al repositorio principal si se llegara a aceptar
 
+
 **Estos serian los comandos que considero mas importantes, si tienes alguna sugerencia no olvides dejarla, en mi perfil tienes mi contacto, gracias por leer :)**
 
 
@@ -323,9 +289,9 @@ Una vez hecha una copia de algun repositorio , puedes solicitar un pr para hacer
 * https://drive.google.com/file/d/1sHgKrrea1-HpityOEYqFLjRdaum85CnW/view
 * https://training.github.com/downloads/es_ES/github-git-cheat-sheet/
 
+<br>
 
 [![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 
 
